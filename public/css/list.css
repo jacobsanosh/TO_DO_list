@@ -1,0 +1,73 @@
+body {
+    text-align: center;
+}
+
+h1 {
+    color: cornflowerblue;
+}
+
+.container {
+    width: 60%;
+    background-color: cyan;
+    margin: auto;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 5px 5px 5px black;
+    background-image: linear-gradient(to right, #84fab0 0%, #8fd3f4 51%, #84fab0 100%);
+}
+
+.container h1 {
+    color: cadetblue;
+    text-shadow: 5px 3px 7px;
+    font-size: 3rem;
+}
+
+.container label {
+    font-size: 2rem;
+}
+
+.container input {
+    width: 50%;
+    height: 2.5rem;
+    border: none;
+    border-radius: 12rem;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+button {
+    display: block;
+    margin: 2rem auto;
+    font-size: 1.5rem;
+    background-color: #717272;
+    width: 25%;
+    padding: 0.5rem;
+    border-radius: 13px;
+    background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 51%, #ffecd2 100%);
+    color: white;
+    border: none;
+}
+
+.yourTask {
+    width: 60%;
+    background-color: cyan;
+    margin: auto;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 5px 5px 5px black;
+    background-image: linear-gradient(to right, #84fab0 0%, #8fd3f4 51%, #84fab0 100%);
+    margin: 3rem auto;
+}
+
+.yourTask label {
+    font-size: 1.3rem;
+}
+
+.yourTask input {
+    transform: scale(2);
+    margin: 1rem;
+}
+
+.yourTask input:checked+label {
+    text-decoration: line-through;
+}

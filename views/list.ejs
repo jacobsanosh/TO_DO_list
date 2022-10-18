@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXPRESS</title>
+    <link rel="stylesheet" href="css/list.css">
+</head>
+
+<body>
+    <h1>hello today is
+        <%= today%>
+    </h1>
+    <div class="container">
+        <h1>ADD YOUR TASKS</h1>
+        <form action="/" method="POST">
+            <!-- <label for="taks">taks</label> -->
+            <input type="text" id="task" name="task" placeholder="Enter your task" autocomplete="off">
+            <button type="submit" name="submit" value=submit>submit</button>
+        </form>
+    </div>
+    <div class="yourTask">
+        <form action="/delete" method="post">
+            <h1>YOUR TASKS ARE</h1>
+            <ul>
+                <%if(tasks.length==0){%>
+                    <h2>Nothing is added to your list</h2>
+                    <%}else{%>
+                        <% for(let i=0;i<tasks.length;i++){%>
+
+                            <input type="checkbox" id="task" name="checkbox" value="<%= tasks[i] %>" onChange="this.form.submit()">
+                            <label for="task"><%= tasks[i]%></label><br>
+
+
+                            <%}}%>
+            </ul>
+        </form>
+    </div>
+</body>
+
+</html>
