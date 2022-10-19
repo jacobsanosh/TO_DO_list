@@ -5,7 +5,7 @@ let todotable;
 exports.Conn = () => {
     return new Promise((resolve, rejects) => {
         console.log("connected")
-        mongoose.connect('mongodb://localhost:27017/sanosh');
+        mongoose.connect('mongodb+srv://sanoshjacob:Sanoshjacob@cluster1.rujtkr5.mongodb.net/sanosh', { useNewUrlParser: true });
         const TODO_SCHMEA = new mongoose.Schema({
             list: {
                 type: String,
