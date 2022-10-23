@@ -57,7 +57,7 @@ conn().then((todotable) => {
         console.log(req.params.data)
 
     })
-    app.listen(port, () => {
+    app.listen(process.env.PORT | port, () => {
         console.log('listeneing to port 3000')
     })
 }).catch((err) => {
