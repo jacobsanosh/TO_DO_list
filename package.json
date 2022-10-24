@@ -1,20 +1,29 @@
 {
-    "name": "to-do-list",
-    "version": "1.0.0",
-    "description": "",
-    "main": "index.js",
-    "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
-    },
-    "author": "",
-    "license": "ISC",
-    "engines": {
-        "node": "12.22.9"
-    },
-    "dependencies": {
-        "body-parser": "^1.20.1",
-        "ejs": "^3.1.8",
-        "express": "^4.18.2",
-        "mongoose": "^6.6.5"
-    }
+  "name": "to-do-list",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "engines": {
+    "node": "12.22.9"
+  },
+  "dependencies": {
+    "body-parser": "^1.20.1",
+    "ejs": "^3.1.8",
+    "express": "^4.18.2",
+    "mongoose": "^6.6.7"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jacobsanosh/TO_DO_list.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/jacobsanosh/TO_DO_list/issues"
+  },
+  "homepage": "https://github.com/jacobsanosh/TO_DO_list#readme",
+  "description": ""
 }
